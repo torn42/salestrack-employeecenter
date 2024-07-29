@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  background-color: #5682ff;
+  padding: 30px;
+  align-items: center;
+}
+
+.image {
+  padding: 50px;
+  background-color: #98b3fd;
+  align-self: center;
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.fullname {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 600;
+
+  p {
+    display: inline;
+  }
+}
+
+.added {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #a0e790;
+}
+
+.notAdded {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #e79090;
+}

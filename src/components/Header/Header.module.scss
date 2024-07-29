@@ -1,0 +1,42 @@
+.header {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #6890ff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.1s ease;
+
+    &:hover {
+      color: #ffffb5;
+    }
+
+    &:active {
+      color: #ffff4a;
+    }
+  }
+
+  h1 {
+    user-select: none;
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+
+    li {
+      font-weight: 600;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}

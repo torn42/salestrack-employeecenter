@@ -1,0 +1,50 @@
+.profile {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-around;
+  gap: 20px;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 400px;
+      height: 400px;
+      margin-bottom: 50px;
+      background-color: #98b3fd;;
+    }
+  }
+
+  &__right {
+
+  }
+}
+
+@media (max-width: 720px) {
+  .profile {
+    padding: 50px 15px 0;
+
+    &__left {
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .profile {
+    margin-bottom: 100px;
+
+    &__left {
+
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}
