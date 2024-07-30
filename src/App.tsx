@@ -12,9 +12,10 @@ function App() {
   const dispatch = useDispatch<AppDispatch>();
 
   useEffect(() => {
-    const user = localStorage.getItem('user');
-    if (user && !isAuth) {
-      dispatch(login(JSON.parse(user)));
+    navigate('/signin');
+    const userStorage = localStorage.getItem('user');
+    if (userStorage && !isAuth) {
+      dispatch(login(JSON.parse(userStorage)));
       navigate('/employees');
     }
   }, [dispatch, isAuth, navigate]);

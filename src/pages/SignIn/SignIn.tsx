@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { login } from '@/store/auth/authSlice';
 
 import styles from './SignIn.module.scss';
+import { User } from '@/store/types';
 
 export const SignIn: FC = () => {
   const { user: stateUser } = useSelector((state: RootState) => state.auth);
@@ -41,7 +42,7 @@ export const SignIn: FC = () => {
   const handleLogin = async () => {
     setIsLoading(true); // Set loading state to true
     const fullName = `${loginData.lastName} ${loginData.firstName} ${loginData.middleName}`;
-    const user = {
+    const user: User = {
       fullName: fullName,
       phoneNumber: phoneNumber,
       email: email,
